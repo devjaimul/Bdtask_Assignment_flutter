@@ -15,7 +15,7 @@ class CustomTextStyle extends StatelessWidget {
       data,
       style: TextStyle(
         color: color ?? Colors.black,
-          fontSize: fontSize ?? 20,
+          fontSize: fontSize ??  20,
           fontWeight: fontWeight?? FontWeight.w500,
 
       ),
