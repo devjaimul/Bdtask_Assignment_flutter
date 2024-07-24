@@ -1,4 +1,6 @@
-import 'package:bdtask_assignmnet/views/home_screen.dart';
+import 'package:bdtask_assignmnet/utils/app_colors.dart';
+import 'package:bdtask_assignmnet/views/splash_screen.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,9 +12,22 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
+
       debugShowCheckedModeBanner: false,
-      home: TitleSection(name: 'rehan', location: 'fp'),
+      home: const SplashScreen(),
+      theme: ThemeData(
+        scaffoldBackgroundColor: AppColors.whiteColors.withOpacity(0.9),
+  appBarTheme:  AppBarTheme(
+    backgroundColor:AppColors.primaryColor ,
+    iconTheme: IconThemeData(
+      color: AppColors.whiteColors
+    ),
+    centerTitle: true,
+    foregroundColor: AppColors.whiteColors,
+    titleTextStyle: const TextStyle(fontSize: 25,fontWeight: FontWeight.w500)
+  )
+      ),
     );
   }
 }
