@@ -81,7 +81,7 @@ class SettingScreen extends StatelessWidget {
                         trailing: Icon(
                           Icons.qr_code_2,
                           color: AppColors.primaryColor,
-                          size: 35,
+                          size: 34,
                         ),
                       ),
                     )
